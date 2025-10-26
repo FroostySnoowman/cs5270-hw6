@@ -114,3 +114,7 @@ python3 consumer.py \
   --profile "cs5270" \
   --sleep-ms 100
 ```
+
+## Screenshots
+- 1.X - S3 -> S3
+- 2.X - S3 -> DynamoDB
