@@ -40,7 +40,8 @@ Notes:
 aws configure --profile cs5270
 ```
 
-## Host B Test
+## S3
+### Host B Test (Second)
 ```python
 python3 consumer.py \
   --req-bucket "usu-cs5270-beal-requests" \
@@ -52,12 +53,64 @@ python3 consumer.py \
   --sleep-ms 100
 ```
 
-## Host A Test
-```python
+### Host A Test (First)
+```bash
 java -jar producer.jar \
   -p "cs5270" \
   -r "us-east-1" \
   -rb "usu-cs5270-beal-requests" \
   -mrt 30000 \
   -ird 100
+```
+
+## DynamoDB
+### General Setup
+```bash
+aws dynamodb create-table \
+  --table-name "widgets" \
+  --attribute-definitions AttributeName=widgetId,AttributeType=S \
+  --key-schema AttributeName=widgetId,KeyType=HASH \
+  --billing-mode PAY_PER_REQUEST \
+  --region "us-east-1" \
+  --profile "cs5270"
+```
+
+```bash
+aws dynamodb describe-table \
+  --table-name "widgets" \
+  --region "us-east-1" \
+  --profile "cs5270" \
+  --query 'Table.TableStatus'
+```
+
+### Host B Test (Second)
+```python
+python3 consumer.py \
+  --req-bucket "usu-cs5270-beal-requests" \
+  --target dynamodb \
+  --table "widgets" \
+  --region "us-east-1" \
+  --profile "cs5270" \
+  --sleep-ms 100
+```
+
+### Host A Test (First)
+```bash
+java -jar producer.jar \
+  -p "cs5270" \
+  -r "us-east-1" \
+  -rb "usu-cs5270-beal-requests" \
+  -mrt 30000 \
+  -ird 100
+```
+
+## Mixed
+```python
+python3 consumer.py \
+  --req-bucket "usu-cs5270-beal-requests" \
+  --target dynamodb \
+  --table "widgets" \
+  --region "us-east-1" \
+  --profile "cs5270" \
+  --sleep-ms 100
 ```
