@@ -1,0 +1,36 @@
+2025-10-25 22:19:33,037 INFO Found credentials in shared credentials file: ~/.aws/credentials
+2025-10-25 22:21:15,614 INFO CREATE -> S3: widgets/sue-smith/d2d540b0-5999-4d43-8f09-b8f528a0f032
+2025-10-25 22:21:15,888 WARNING Unknown request type: 'bad'
+2025-10-25 22:21:16,324 WARNING Ignoring update (out of scope for HW6)
+2025-10-25 22:21:16,744 INFO CREATE -> S3: widgets/sue-smith/08254284-3fd1-4232-905f-b3730a7c6b8c
+2025-10-25 22:21:17,203 INFO CREATE -> S3: widgets/mary-matthews/7f0bfd22-876f-42f2-937d-cdf048caec2a
+2025-10-25 22:21:17,710 INFO CREATE -> S3: widgets/mary-matthews/8123f304-f23f-440b-a6d3-80e979fa4cd6
+2025-10-25 22:21:18,155 INFO CREATE -> S3: widgets/john-jones/ad0bb9e1-28e9-46e0-ad08-8192f4d3b6c6
+2025-10-25 22:21:18,611 INFO CREATE -> S3: widgets/john-jones/2b8186fc-11a4-4b97-b048-571fe200e646
+2025-10-25 22:21:19,108 INFO CREATE -> S3: widgets/mary-matthews/3b7fef78-f757-424d-9c0c-431768022528
+2025-10-25 22:21:19,552 INFO CREATE -> S3: widgets/sue-smith/6cea7243-924a-4bc9-9779-8bc89e91acdf
+2025-10-25 22:21:19,996 INFO CREATE -> S3: widgets/john-jones/5c94f104-a9b3-4fed-a039-2cc4c631d042
+2025-10-25 22:21:20,411 INFO CREATE -> S3: widgets/mary-matthews/0510d371-0191-43d9-81d5-5a163659ae6f
+2025-10-25 22:21:20,695 WARNING Ignoring update (out of scope for HW6)
+2025-10-25 22:21:21,197 INFO CREATE -> S3: widgets/john-jones/1dbcba17-aff2-4b62-9d8e-0e6c2b58ed86
+2025-10-25 22:21:21,451 WARNING Ignoring update (out of scope for HW6)
+2025-10-25 22:21:21,729 WARNING Ignoring delete (out of scope for HW6)
+2025-10-25 22:21:21,976 WARNING Ignoring update (out of scope for HW6)
+2025-10-25 22:21:22,431 INFO CREATE -> S3: widgets/mary-matthews/6984abeb-5b24-42eb-93cc-3a5bef6b4b8a
+2025-10-25 22:21:22,717 WARNING Ignoring update (out of scope for HW6)
+2025-10-25 22:21:23,234 INFO CREATE -> S3: widgets/henry-hops/3750be35-9074-4879-bb43-759d38263868
+2025-10-25 22:21:23,664 INFO CREATE -> S3: widgets/henry-hops/deab01f2-0075-4a11-87e1-21cbea5c0c7f
+2025-10-25 22:21:23,907 WARNING Ignoring delete (out of scope for HW6)
+2025-10-25 22:21:24,190 WARNING Ignoring update (out of scope for HW6)
+2025-10-25 22:21:24,471 WARNING Ignoring update (out of scope for HW6)
+2025-10-25 22:21:24,905 WARNING Ignoring update (out of scope for HW6)
+2025-10-25 22:21:25,243 WARNING Ignoring update (out of scope for HW6)
+2025-10-25 22:21:25,663 INFO CREATE -> S3: widgets/mary-matthews/64542834-2dc1-469f-b3c4-93d124672a4a
+2025-10-25 22:21:25,924 WARNING Skipping empty request object: 1612306374392
+2025-10-25 22:21:26,285 WARNING Ignoring delete (out of scope for HW6)
+2025-10-25 22:21:26,810 INFO CREATE -> S3: widgets/john-jones/b71b5b2e-610a-402c-8341-a69d8d62747e
+2025-10-25 22:21:27,051 ERROR Failed to process 1612306375892: 'NoneType' object has no attribute 'strip'
+2025-10-25 22:21:27,333 WARNING Ignoring delete (out of scope for HW6)
+2025-10-25 22:21:27,580 WARNING Ignoring update (out of scope for HW6)
+2025-10-25 22:21:28,124 INFO CREATE -> S3: widgets/sue-smith/e50b4381-4332-438f-bcec-bd2b8c0fa5ed
+2025-10-25 22:21:28,393 WARNING Ignoring delete (out of scope for HW6)

@@ -35,7 +35,13 @@ Notes:
 - Request JSON must follow the schema in the assignment handout.
 - Keep and submit your logs per the homework. 
 
+## Setup AWS Credentials
+```
+aws configure --profile cs5270
+```
+
 ## Host B Test
+```python
 python3 consumer.py \
   --req-bucket "usu-cs5270-beal-requests" \
   --target s3 \
@@ -44,11 +50,14 @@ python3 consumer.py \
   --region "us-east-1" \
   --profile "cs5270" \
   --sleep-ms 100
+```
 
 ## Host A Test
+```python
 java -jar producer.jar \
   -p "cs5270" \
   -r "us-east-1" \
   -rb "usu-cs5270-beal-requests" \
   -mrt 30000 \
   -ird 100
+```
