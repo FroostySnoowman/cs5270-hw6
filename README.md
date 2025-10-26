@@ -30,11 +30,6 @@ Flags:
   --log-file consumer.log
   --key-prefix widgets/ key prefix in Bucket 3
 
-Notes:
-- Handles **create** only for HW6; logs a warning for update/delete (reserved for HW7).
-- Request JSON must follow the schema in the assignment handout.
-- Keep and submit your logs per the homework. 
-
 ## Setup AWS Credentials
 ```
 aws configure --profile cs5270
