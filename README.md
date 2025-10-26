@@ -6,23 +6,29 @@ If it's a **create** request, writes the widget to either:
 - DynamoDB table with flattened attributes.
 
 ## Install
+```bash
 python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
+```
 
 ## Run (S3 target)
+```python
 python3 consumer.py \
   --req-bucket BUCKET2 \
   --target s3 \
   --out-bucket BUCKET3 \
   --region us-east-1
+```
 
 ## Run (DynamoDB target)
+```python
 python3 consumer.py \
   --req-bucket BUCKET2 \
   --target dynamodb \
   --table widgets \
   --region us-east-1
+```
 
 Flags:
   --sleep-ms 100        poll delay when empty
